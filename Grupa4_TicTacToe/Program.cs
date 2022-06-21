@@ -36,7 +36,7 @@ using Grupa4_TicTacToe;
 //Welcome screen added
 Console.Clear();
 GameIntro.Welcome();
-Thread.Sleep(5000);
+Thread.Sleep(3000);
 Console.Clear();
 
 
@@ -59,7 +59,7 @@ player1.GetPlayerName(); //izsaucam f-ciju GetPlayerName
 HumanPlayer player2 = new HumanPlayer();
 player2.GetPlayerName();
 
-Thread.Sleep(2000);
+Thread.Sleep(1000);
 Console.Clear();
 
 
@@ -91,7 +91,7 @@ try
             {
                 Console.WriteLine("This cell is occupied");
                 Console.WriteLine("Try again");
-                Thread.Sleep(2000);
+                Thread.Sleep(1000);
                 Console.Clear();
                 Board.ShowBoard(arr);
                 Console.WriteLine($"Enter your value from 1 to 9: {player1.Name}");
@@ -121,7 +121,7 @@ try
                 {
                     Console.WriteLine("This cell is occupied");
                     Console.WriteLine("Try again");
-                    Thread.Sleep(2000);
+                    Thread.Sleep(1000);
                     Console.Clear();
                     Board.ShowBoard(arr);
                     Console.WriteLine($"Enter your value from 1 to 9: {player2.Name}");
